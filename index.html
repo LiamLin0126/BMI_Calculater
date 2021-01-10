@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link href="//db.onlinewebfonts.com/c/344d17417b87d35e88d9df15bea12e2e?family=SFNSDisplay" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="images">
+                <img src="images/BMICLogo.png" alt="title">
+            </div>
+            <div class="info">
+                <form>
+                    <div class="height">
+                        <label for="height">身高 cm:</label><br>
+                        <input type="number" placeholder="請輸入身高"  id="height" name="height"><br>
+                    </div>
+                    <div class="weight">
+                        <label for="weight" >體重 kg:</label><br>
+                        <input type="number" placeholder="請輸入體重" size="16" id="weight" name="weight"><br>
+                    </div>
+                </form>
+            </div>
+            <div class="result">
+                
+                <p class="check">看結果</p>
+                <p class="label">BMI</p>
+                <span class="loop">
+                    <img src="images/icons_loop.png" alt="loop">
+                </span>
+            </div>
+            <div class="status">
+                <p id="statusText" ></p>
+            </div>
+        </div>
+        <div class="table">
+            <p>BMI 紀錄</p>
+            <ul class="list">
+
+            </ul>
+        </div>
+        <div class="footer">
+            <img src="/images/BMICLogo_footer.png" alt="">
+        </div>
+    </div>
+    
+
+    <script src="js/all.js"></script>
+</body>
+</html>
