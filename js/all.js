@@ -106,12 +106,12 @@ function updatelist(){
     var length = datalist.length;
 
     for( i = 0 ; i < length ; i++){
-        str += "<li class='"+datalist[i].color+"' data-num='"+i+"'><div class='STATE'><span class='state'>" + datalist[i].State +"</span></div>"
+        str += "<li class='"+datalist[i].color+"' ><div class='STATE'><span class='state'>" + datalist[i].State +"</span></div>"
         +"<div class='bmiTitle'> BMI: <span class='bmiDATA'>  "+datalist[i].BMI+"</span></div>"
         +"<div class='wTitle'> weight: <span class='wDATA'> "+ datalist[i].weight + "</span>kg</div>" 
         +"<div class='hTitle'> height: <span class='hDATA'> "+datalist[i].height+ "</span>cm</div>"
         +"<div class='Date'><span class='date'>"+datalist[i].DATE+"</span></div>"
-        +"<div class='Delete'><a href='#'>刪除</a></div></li>"  ;
+        +"<div class='Delete'><a data-num='"+i+"' href='#'>刪除</a></div></li>"  ;
 
     
     }
